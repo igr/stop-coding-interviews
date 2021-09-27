@@ -1,0 +1,21 @@
+{
+  "name": "sci",
+  "version": "2.4.1",
+  "description": "Stop Coding Interviews",
+  "scripts": {
+    "clean": "rm -rf out",
+    "dev": "node spig.js dev",
+    "build": "node spig.js",
+    "build:lambda": "cd netlify && build.sh"
+  },
+  "author": {
+    "name": "Igor Spasić",
+    "email": "igor.spasic@gmail.com",
+    "url": "https://igo.rs/"
+  },
+  "license": "MIT",
+  "homepage": "https://stopcodinginterviews.com",
+  "dependencies": {
+    "spignite": "^2.4.1"
+  }
+}

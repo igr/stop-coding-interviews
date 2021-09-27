@@ -1,0 +1,123 @@
+@import "mixins";
+@import "normalize";
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Domine:400,700');
+$font2: "Domine";
+$font: "Raleway";
+
+$color-background: #fff;
+$color-text: #262727;
+$color-red: #ba2320;
+
+html, body {
+  background-color: $color-background;
+  color: $color-text;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+}
+main {
+  font-family: $font, serif;
+  background-color: $color-background;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 3vmax;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-bottom: 5rem;
+}
+h1 {
+  margin: 0;
+  font-size: 10vmax;
+  font-weight: normal;
+  font-family: $font2;
+  letter-spacing: -0.1em;
+  color: $color-red; 
+}
+h2 {
+  margin: 0;
+  font-size: 7vmax;
+  font-weight: normal;
+  font-family: $font2;
+  line-height: 0.8em;
+  margin-bottom: 1em;
+  letter-spacing: -0.05em;
+}
+
+.nonselect {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+}
+
+.section{
+  text-align:center;
+}
+div.section {
+  padding: 0 20%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  a {
+    text-decoration: none;
+    color: $color-text;
+    padding: 4px;
+    font-size: 18px;
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 100;
+  width: inherit;
+  max-width: 100%;
+}
+
+span.hidden {
+  opacity: 0;
+  transition: 2s ease-in-out;
+  transform: scale(2);
+  max-width: 0;
+}
+.none {
+  display: none;
+}
+ol {
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+  text-align: left;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  list-style: none;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: $color-red;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 32px) {
+  .gallery {
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  main {
+  }
+  .gallery {
+    grid-template-columns: auto auto;
+    a {
+    }
+  }
+}
