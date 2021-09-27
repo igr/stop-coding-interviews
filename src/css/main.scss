@@ -100,7 +100,7 @@ ol li {
   list-style: none;
 }
 ol li::before {
-  content: counter(my-awesome-counter) ". ";
+  content: "0" counter(my-awesome-counter) " – ";
   color: $color-red;
   border-radius: 6px;
   font-weight: bold;
