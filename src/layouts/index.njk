@@ -6,14 +6,25 @@
 	<h1>Stop</h1>
 	<h2>Coding<br>
 	Interviews</h2>
+
 	{{ content | safe }}
+
+	<ul id="social">
+	<!-- Twitter -->
+	<li><a href="https://twitter.com/share?url={{ site.baseURL }}" target="_blank" class="share-btn twitter" title="Twiter"><img src="/twitter.svg" alt="twitter"></a></li>
+	<!-- Facebook -->
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseURL }}" target="_blank" class="share-btn facebook" title="Facebook"><img src="/facebook.svg" alt="facebook"></a></li>
+	<!-- Reddit -->
+	<li><a href="https://reddit.com/submit?mini=true&amp;url={{ site.baseURL }}" target="_blank" class="share-btn reddit" title="Reddit"><img src="/reddit.svg" alt="redit"></a></li>
+	<!-- LinkedIn -->
+	<li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.baseURL }}" target="_blank" class="share-btn linkedin" title="LinkedIn"><img src="/linkedin.svg" alt="linkedin"></a></li>
+	<!-- Email -->
+	<li><a href="mailto:?subject=Stop&nbsp;Coding&nbsp;Interviews&amp;body={{ site.baseURL }}" target="_blank" class="share-btn email" title="Email"><img src="/email.svg" alt="email"></a></li>
+	</ul>
 </div>
 
 {% endblock %}
 
 {% block script %}
-<script>
-
-ready(() => {
 </script>
 {% endblock %}

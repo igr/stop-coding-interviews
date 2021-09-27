@@ -114,10 +114,22 @@ ol li::before {
 
 @media only screen and (max-width: 640px) {
   main {
+    margin: 0;
   }
-  .gallery {
-    grid-template-columns: auto auto;
-    a {
-    }
+  ul#social {
+    margin-left: 10vw;
+    margin-right: 10vw;  
+  }
+}
+
+ul#social {
+  margin-top: 2em;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  li a img {
+    width: 1em;    
   }
 }
