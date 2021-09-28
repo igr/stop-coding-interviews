@@ -19,7 +19,7 @@ html, body {
 main {
   font-family: $font, serif;
   background-color: $color-background;
-  text-align: center;
+  text-align: left;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-size: 3vmax;
@@ -34,6 +34,9 @@ h1 {
   font-family: $font2;
   letter-spacing: -0.1em;
   color: $color-red; 
+}
+#h1, #h2 {
+  text-align: center;
 }
 h2 {
   margin: 0;
@@ -52,13 +55,6 @@ h2 {
   -webkit-touch-callout: none;
   -o-user-select: none;
   -moz-user-select: none;
-}
-
-.section{
-  text-align:center;
-}
-div.section {
-  padding: 0 20%;
 }
 
 footer {
@@ -128,8 +124,35 @@ ul#social {
   margin-right: 20vw;
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
-  li a img {
-    width: 1em;    
+  justify-content: space-around;  
+  li a {
+    width: 1em;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
   }
+  img {
+    width: 1em;
+  }
+  li a:hover {
+    background-color: $color-red;
+  }
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  color: $color-red;
+  background-color: $color-background;
+  padding: 0 0.1em;
+  &:hover {
+    color: $color-background;
+    background-color: $color-red;    
+  }  
+}
+ol li a {  
+  line-height: 0.8em;  
+  position: relative;
+  top: 4px;  
 }

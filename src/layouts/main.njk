@@ -1,0 +1,12 @@
+{% extends "base.njk" %}
+
+{% block main %}
+
+<h1>Stop</h1>
+<h2>Coding Interviews</h2>
+
+{{ content | safe }}
+
+<a href="/">Home</a>{% if next %} | <a href="{{ site.pageOfSrc("/" + next + ".md").url }}">Next</a>{% endif %}
+
+{% endblock %}
