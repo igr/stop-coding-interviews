@@ -1,9 +1,10 @@
 @import "mixins";
 @import "normalize";
 
-@import url('https://fonts.googleapis.com/css?family=Raleway|Domine:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Domine:400,700|Space+Mono');
 $font2: "Domine";
 $font: "Raleway";
+$font3: "Space Mono";
 
 $color-background: #fff;
 $color-text: #262727;
@@ -154,4 +155,25 @@ ol li a {
   line-height: 0.8em;  
   position: relative;
   top: 4px;  
+}
+p {
+  margin: 4em;
+}
+dl {
+  margin: 4em;
+  font-family: $font3;
+  font-size: 0.8em;
+  letter-spacing: -0.05em;
+  dt {
+    font-weight: bold;
+    display: inline-block;
+  }
+  dd {
+    display: inline;
+  }
+}
+
+hr {
+  border: 1px dashed #ccc;
+  margin-bottom: 3em;
 }
